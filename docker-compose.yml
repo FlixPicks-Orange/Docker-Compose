@@ -10,3 +10,5 @@ services:
     build: ./FlixPicks-DB
     ports:
       - 3000:3000
+    environment:
+      DB_URL: http://database:3000/api
