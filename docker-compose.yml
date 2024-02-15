@@ -12,3 +12,7 @@ services:
       - 3000:3000
     environment:
       DB_URL: http://database:3000/api
+  recommender:
+    build: ./FlixPicks-recommender
+    environment:
+      DB_URL: http://database:3000/api
