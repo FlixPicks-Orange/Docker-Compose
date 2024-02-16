@@ -6,12 +6,14 @@ services:
       - 80:2000
     environment:
       DB_URL: http://database:3000/api
+  
   database:
     build: ./FlixPicks-DB
     ports:
       - 3000:3000
     environment:
       DB_URL: http://database:3000/api
+  
   recommender:
     build: ./FlixPicks-recommender
     environment:
